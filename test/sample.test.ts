@@ -1,13 +1,10 @@
-function calc(a: number, b: number) {
-  return a + b;
-}
+import * as fs from 'fs';
+import * as path from 'path';
 
-describe('TestClass', () => {
-  it('calc', () => {
-    // exercise
-    const actual = calc(1, 2);
-
-    // verify
-    expect(actual).toBe(3);
+describe('image test', () => {
+  it('ok', () => {
+    const imagePath = path.join(process.cwd(), 'test/test1.png');
+    const file = fs.readFileSync(imagePath);
+    expect(file).toMatchImageSnapshot();
   });
 });
