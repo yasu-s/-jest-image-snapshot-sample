@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# jest-image-snapshot
+__diff_output__
