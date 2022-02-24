@@ -9,5 +9,6 @@
 - Node.js - 14.x
 - Yarn - 1.22.x
 - TypeScript - 4.5.x
+- jest-image-snapshot - 4.5.x
 
 ## 動作確認
