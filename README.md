@@ -12,3 +12,15 @@
 - jest-image-snapshot - 4.5.x
 
 ## 動作確認
+
+```bash
+# Git clone
+git clone https://github.com/yasu-s/jest-image-snapshot-sample jest-image-snapshot-sample
+cd jest-image-snapshot-sample
+
+# パッケージインストール
+yarn
+
+# テスト実行
+yarn test
+```
