@@ -27,42 +27,39 @@ yarn test
 ## 実行結果
 
 ```bash
-yarn run v1.22.11
-warning package.json: No license field
-$ jest
  FAIL  test/sample.test.ts
   image test
-    ✓ test1.png ok (120 ms)
-    ✕ test2.png ng (126 ms)
+    ✕ test.png (128 ms)
 
-  ● image test › test2.png ng
+  ● image test › test.png
 
     Expected image to match or be a close match to snapshot but was 1.6022815659839251% different from snapshot (309 differing pixels).
-    See diff for details: jest-image-snapshot-sample/test/__image_snapshots__/__diff_output__/sample-test-ts-image-test-test-2-png-ng-1-diff.png
+    See diff for details: ./test/__image_snapshots__/__diff_output__/sample-test-ts-image-test-test-png-1-diff.png
 
-      12 |     const imagePath = path.join(process.cwd(), 'test/test2.png');
-      13 |     const file = fs.readFileSync(imagePath);
-    > 14 |     expect(file).toMatchImageSnapshot();
+       6 |     const imagePath = path.join(process.cwd(), 'test/test.png');
+       7 |     const file = fs.readFileSync(imagePath);
+    >  8 |     expect(file).toMatchImageSnapshot();
          |                  ^
-      15 |   });
-      16 | });
-      17 |
+       9 |   });
+      10 | });
+      11 |
 
-      at Object.<anonymous> (test/sample.test.ts:14:18)
+      at Object.<anonymous> (test/sample.test.ts:8:18)
 
  › 1 snapshot failed.
 Snapshot Summary
  › 1 snapshot failed from 1 test suite. Inspect your code changes or run `yarn test -u` to update them.
 
 Test Suites: 1 failed, 1 total
-Tests:       1 failed, 1 passed, 2 total
-Snapshots:   1 failed, 1 passed, 2 total
-Time:        1.991 s
+Tests:       1 failed, 1 total
+Snapshots:   1 failed, 1 total
+Time:        0.797 s, estimated 2 s
 Ran all test suites.
 error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
 
 
 ## DIFF画像
 
-![比較画像](./test/__image_snapshots__/__diff_output__/sample-test-ts-image-test-test-2-png-ng-1-diff.png)
+![比較画像](./test/__image_snapshots__/__diff_output__/sample-test-ts-image-test-test-png-1-diff.png)
