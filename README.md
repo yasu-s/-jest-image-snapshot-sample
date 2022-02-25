@@ -61,3 +61,8 @@ Time:        1.991 s
 Ran all test suites.
 error Command failed with exit code 1.
 ```
+
+
+## DIFF画像
+
+![比較画像](./test/__image_snapshots__/__diff_output__/sample-test-ts-image-test-test-2-png-ng-1-diff.png)
