@@ -9,13 +9,6 @@
     "stripInternal": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "rootDir": "./test",
-    "typeRoots": [
-      "node_modules/@types"
-    ]
-  },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+    "rootDir": "./test"
+  }
 }
