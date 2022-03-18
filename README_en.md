@@ -1,15 +1,15 @@
 # jest-image-snapshot-sample
 
-## 概要
+## Overview
 
-- [jest-image-snapshot](https://github.com/americanexpress/jest-image-snapshot)のサンプルコードです。
+- This is a sample code of [jest-image-snapshot](https://github.com/americanexpress/jest-image-snapshot). 
 
-## 動作環境
+## System Requirements
 
 - Node.js - 14.x
 - Yarn - 1.22.x
 
-## ライブラリ
+## Library
 
 - TypeScript - 4.5.x
 - Jest - 27.5.x
@@ -17,17 +17,17 @@
 - jest-image-snapshot - 4.5.x
 - @types/jest-image-snapshot - 4.3.x
 
-## 動作確認
+## Usage
 
 ```bash
-# パッケージインストール
+# Node.js package installation 
 yarn
 
-# テスト実行
+# Test run 
 yarn test
 ```
 
-## 実行結果
+## Execution result
 
 ```bash
 yarn run v1.22.11
@@ -66,6 +66,6 @@ error Command failed with exit code 1.
 ```
 
 
-## DIFF画像
+## DIFF image 
 
 ![比較画像](./test/__image_snapshots__/__diff_output__/sample-test-ts-image-test-test-2-png-ng-1-diff.png)
